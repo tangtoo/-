@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我</title>
+		<link rel="stylesheet" href="css/about.css" />
+		<style type="text/css">
+			a {
+				text-decoration: none;
+			}
+		</style>
+		<script type="text/javascript" language="javascript">
+			function show_cur_times() {
+				var date_time = new Date();
+				var week;
+				switch(date_time.getDay()) {
+					case 1:
+						week = "星期一";
+						break;
+					case 2:
+						week = "星期二";
+						break;
+					case 3:
+						week = "星期三";
+						break;
+					case 4:
+						week = "星期四";
+						break;
+					case 5:
+						week = "星期五";
+						break;
+					case 6:
+						week = "星期六";
+						break;
+					default:
+						week = "星期日";
+						break;
+				}
+
+				var year = date_time.getFullYear();
+				if(year < 10) {
+					year = "0" + year;
+				}
+
+				var month = date_time.getMonth() + 1;
+				if(month < 10) {
+					month = "0" + month;
+				}
+
+				var day = date_time.getDate();
+
+				if(day < 10) {
+					day = "0" + day;
+				}
+
+				var hours = date_time.getHours();
+				if(hours < 10) {
+					hours = "0" + hours;
+				}
+
+				var minutes = date_time.getMinutes();
+
+				if(minutes < 10) {
+					minutes = "0" + minutes;
+				}
+
+				var seconds = date_time.getSeconds();
+
+				if(seconds < 10) {
+					seconds = "0" + seconds;
+				}
+
+				var date_str = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+				document.getElementById("weltime").innerHTML = date_str;
+
+			}
+
+			setInterval("show_cur_times()", 100);
+		</script>
+
+	</head>
+
+	<body>
+		<div class="top">
+			<div>
+				<P>欢迎光临!
+					<SPAN id=weltime>time</SPAN>
+				</P>
+
+			</div>
+
+		</div>
+		<div class="wrapper">
+			<div class="top-nav-wrap">
+				<div class="top-nav">
+					<ul class="top-nav-1">
+						<li class="top-nav-logo">
+							<span class="c-span"><a href="index.html" style="font-size: 25px;">唐绕个人博客</a></span>
+						</li>
+					</ul>
+					<ul class="top-nav-2">
+						<li class="top-nav-menu">
+							<a href="index.html">网站首页</a>
+						</li>
+						<li class="top-nav-menu">
+							<a href="#">关于我</a>
+						</li>
+						<li class="top-nav-menu">
+							<a href="photos.html">相册集</a>
+						</li>
+						<li class="top-nav-menu">
+							<a href="study.html">学无止境</a>
+						</li>
+						<li class="top-nav-menu">
+							<a href="bbs.html">留言</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="search-box">
+				<!--左边盒子-->
+				<div class="leftbox">
+					<div class="infos">
+						<div class="newsview">
+							<h2 class="intitle">您现在的位置是：<a href="index.html">首页</a><a href="#">>关于我</a></h2>
+							<div class="news_infos">
+								<p>唐绕，男，一个即将毕业的大学生！大学三年来以来学习了计算机网络技术的课程，计算机是我所感兴趣的东西，在网上学习课程，玩玩游戏是我常做的事情。</p>
+								<br />
+								<p>在大一的时候有幸加入了校学生会，结识了很多同仁，学习到了做事的方法和做人的道理，在学业和工作方面做到了权衡，当然学业是作为学生最为重要的事情，发展课外兴趣活动也是非常重要的，所以作为班级的团支书，在一个学期会弄2次的聚餐活动，偶尔也有“雷锋日”，这些活动丰富的大家的业余生活，更让我促进了我与大家的感情！</p>
+								<br />
+								<p> 来到计网2班，在这里有志趣相投的朋友，有学霸，有知识渊博、有趣的老师，在这里体验到 了和高中不一样的感觉，大学生活真的意味深长。</p>
+								<br />
+								<p> 成功属于有准备的人，要确立远期发展目标，以后的将是光明大道。</p>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!--右边盒子-->
+				<div class="right-box">
+					<div class="aboutme">
+						<h2 class="ab_title">关于我</h2>
+						<div class="avatar"><img src="img/001.jpg" alt="" /></div>
+						<div class="ab_con">
+							<p>姓名：唐绕</p>
+							<p>班级：16计网2班</p>
+							<p>籍贯：贵州</p>
+							<p>邮箱：853256942@qq.com</p>
+
+						</div>
+
+					</div>
+					<div class="weixin">
+						<h2 class="ab_title">微信关注</h2>
+						<ul>
+							<img src="img/weixin.jpg">
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer" style=" font-size: 14px;" style="margin: 0 2px;">
+			<p>娄底职业技术学院16级毕业设计作品 </p>
+			<p>唐绕 版权所有copyright&copy; 2018-2019</p>
+			<p>指导老师：肖忠良</p>
+		</div>
+
+	</body>
+
+</html>
